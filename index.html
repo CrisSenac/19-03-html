@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h2>Fórmulário</h2>
+
+    <form action="register.php" method="get">
+        <div>
+            <label>Nome</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="number">
+        </div>
+
+        <div>
+            <label for="job">Selecione uma profissão</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester</option>
+                <option value="devops">Devops</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Escreva um comentário</label>
+            <textarea name="comment">
+            </textarea>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Preenchas as suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Abacate"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="honda" name="car_model">
+                <label for="honda">Honda</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="renault" name="car_model">
+                <label for="renault">Renault</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Pneus Grande</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo_engine">
+                <label for="turbo_engine">Motor Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <div>
+            <label for="image">Insira sua imagem</label>
+            <input type="file" name="image">
+        </div>
+
+        <div>
+            <label for="email">Digite o seu email:</label>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <label for="value">Digite algum valor para doação:</label>
+            <input type="text" value="10 R$" name="value">
+        </div>
+
+        <div>
+            <p>Tente mudar o valor:</p>
+            <input type="text" value="Não consegue moises" disabled>
+        </div>
+
+        <div>
+            <label for="currentjob">Digite sua profissão</label>
+            <input type="text" name="currentjob" placeholder="No que você trabalha atualmente">
+        </div>
+
+        <div>
+            <label for="birthday"> Ano de nacimento</label>
+            <input type="text" placeholder="Ano de nascimento" required>
+        </div>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+a
+    </form>
+    
+</body>
+</html>
